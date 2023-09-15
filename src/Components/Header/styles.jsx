@@ -15,18 +15,22 @@ import { alpha } from '@mui/material/styles';
 
   },
   search: {
-    position: 'relative',
+    display:'flex',
+    flexDirection:"row",
+    justifyContent:"space-arround",
+    gap:theme.spacing(2),
+    alignItems:"center",
     background:'white',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': { backgroundColor: alpha(theme.palette.common.white, 0.25) },
     marginRight: theme.spacing(2),
-    margin: 0, auto,
+    margin: 0,
     width: '100%',
-    [theme.breakpoints.up('sm')]: { marginLeft: theme.spacing(3), width: 'auto' },
+    // [theme.breakpoints.up('sm')]: { marginLeft: theme.spacing(3), width: 'auto' },
   },
   searchIcon: {
-    padding: theme.spacing(0, 2), height: '100%', position: 'absolute', pointerEvents: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center',
+    padding: theme.spacing(2, 2), height: '100%', position: 'absolute', pointerEvents: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center',
   },
   inputRoot: {
     color: 'inherit',
